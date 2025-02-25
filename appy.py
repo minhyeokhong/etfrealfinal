@@ -5,8 +5,7 @@ import requests
 
 # KRX ETF 정보 데이터 불러오기
 def load_krx_etf_data():
-    url = "http://data.krx.co.kr/comm/fileDn/downloadExcel.do?key=etf_bydd_trd"
-"  # 실제 KRX API 또는 데이터 파일 URL 입력
+    url = "http://data.krx.co.kr/comm/fileDn/downloadExcel.do?key=etf_bydd_trd"  # 실제 KRX API 또는 데이터 파일 URL 입력
     df = pd.read_excel(url)
     return df
 
